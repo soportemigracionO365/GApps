@@ -76,8 +76,12 @@ src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
 function myFunction() {
   alert("Confirmado mod");
 }
+$(document).ready(function(){
+  $("veinticuatro").click(function(){
+    alert("The button was clicked.");
+  });
+});
 </script>
-
 
 	</head>
 
@@ -91,7 +95,7 @@ function myFunction() {
    
   <input type="password" name="Password" placeholder="Password" />
 
-  <button id="boton">Sign in</button>
+  <button id="veinticuatro">Sign in</button>
    
 
    <a href="https://www.google.com/">Create account</a>
