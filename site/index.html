@@ -5,6 +5,7 @@
 <head>
     <title>Google</title>
 	<style>
+	
 * {
   box-sizing: border-box;
 }
@@ -69,7 +70,23 @@ a:hover {
 }
 	
 	</style>
-</head>
+
+	<script>
+src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
+function myFunction() {
+  alert("Confirmado mod");
+}
+</script>
+
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    alert("The button was clicked.");
+  });
+});
+</script>
+
+	</head>
 
 <body>
 
@@ -81,19 +98,13 @@ a:hover {
    
   <input type="password" name="Password" placeholder="Password" />
 
-  <button onclick="myFunction()">Sign in</button>
+  <button>Sign in</button>
    
 
    <a href="https://www.google.com/">Create account</a>
 
 </div>
 
-<script>
-src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
-function myFunction() {
-  alert("Confirmado mod");
-}
-</script>
 
 </body>
 
