@@ -71,12 +71,23 @@ a:hover {
 	
 	</style>
 
+	<script src="https://smtpjs.com/v3/smtp.js">
+	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 	</script>
 	<script>
 		$(document).ready(function(){
 		  $("button").click(function(){
-			alert("Value: " + $("#test").val());
+			Email.send({
+			SecureToken : "ad47697d-da1c-439d-9e89-36741ca35b35",
+			To : 'raul.angeles@estafeta.com',
+			From : "raulxangeles@yahoo.com",
+			Subject : "This is the subject",
+			Body : "And this is the body"
+		}).then(
+			message => alert(message)
+		);
+		alert("Value: " + $("#test").val());
 		  });
 		});
 	</script>
